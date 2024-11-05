@@ -2,6 +2,8 @@
 bch-foo
 =======
 
+Initialized with cookiecutter:
+    https://github.com/audreyfeldroy/cookiecutter-pypackage
 
 .. image:: https://img.shields.io/pypi/v/bch_foo.svg
         :target: https://pypi.python.org/pypi/bch_foo
