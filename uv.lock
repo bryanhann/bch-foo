@@ -6,7 +6,9 @@ name = "bch-foo"
 version = "0.1.2b0"
 source = { editable = "." }
 dependencies = [
+    { name = "bump" },
     { name = "bump2version" },
+    { name = "my-shell" },
     { name = "typer" },
 ]
 
@@ -20,12 +22,29 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "bump", specifier = ">=1.3.2" },
     { name = "bump2version", specifier = ">=1.0.1" },
     { name = "coverage", marker = "extra == 'dev'" },
+    { name = "my-shell", specifier = ">=0.0.2" },
     { name = "mypy", marker = "extra == 'dev'" },
     { name = "pytest", marker = "extra == 'dev'" },
     { name = "ruff", marker = "extra == 'dev'" },
     { name = "typer", specifier = ">=0.12.5" },
+]
+
+[[package]]
+name = "bump"
+version = "1.3.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "first" },
+    { name = "packaging" },
+    { name = "toml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/83/96/d956d4a71d58c5149069395980ed5fc6c0eb50b7eff994b2b1b6ab0a70b0/bump-1.3.2.tar.gz", hash = "sha256:f42e1c7759515937abeab153cbad53ddc8a5008be6553518cbd10faabf500b09", size = 3767 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e9/35/9fc2abc6030b496531cbeb88c1758fb9b1b13f2df3195730552f31c816f3/bump-1.3.2-py3-none-any.whl", hash = "sha256:fe4574252e91bbfb8768c12ccef67f5a3bd1be7d3e932631695299425f445ed9", size = 4054 },
 ]
 
 [[package]]
@@ -97,6 +116,15 @@ wheels = [
 ]
 
 [[package]]
+name = "first"
+version = "2.0.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b0/a2/78a4e6801fbd789c60888afb8e28ccbe629f9a25137bfafecb363db2fb53/first-2.0.2.tar.gz", hash = "sha256:ff285b08c55f8c97ce4ea7012743af2495c9f1291785f163722bd36f6af6d3bf", size = 6964 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/62/eda58db762d4845c971029becfecf6e85ad71c3bcba7d400598013a222a1/first-2.0.2-py2.py3-none-any.whl", hash = "sha256:8d8e46e115ea8ac652c76123c0865e3ff18372aef6f03c22809ceefcea9dec86", size = 5359 },
+]
+
+[[package]]
 name = "iniconfig"
 version = "2.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -124,6 +152,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba", size = 8729 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8", size = 9979 },
+]
+
+[[package]]
+name = "my-shell"
+version = "0.0.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/39/5d/e92b652b4d01ceef9636726ffbe6d665fdf08fbcf57d40412656f7369ae7/my_shell-0.0.2.tar.gz", hash = "sha256:875956aef450ca327fe74fe6a7c0546ee653f998e00a14db1e0d09ac3ef71a88", size = 17785 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/21/c9/0556e3c306e4ee19909f96712194eb829ae5054744066ae1d361f880c881/my_shell-0.0.2-py3-none-any.whl", hash = "sha256:c5616cc5194ddfec01b6cd94003d3eeec498ed73c5dccfe0e0b6ceb404e057a4", size = 19321 },
 ]
 
 [[package]]
@@ -245,6 +282,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/58/15/8b3609fd3830ef7b27b655beb4b4e9c62313a4e8da8c676e142cc210d58e/shellingham-1.5.4.tar.gz", hash = "sha256:8dbca0739d487e5bd35ab3ca4b36e11c4078f3a234bfce294b0a0291363404de", size = 10310 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl", hash = "sha256:7ecfff8f2fd72616f7481040475a65b2bf8af90a56c89140852d1120324e8686", size = 9755 },
+]
+
+[[package]]
+name = "toml"
+version = "0.10.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/be/ba/1f744cdc819428fc6b5084ec34d9b30660f6f9daaf70eead706e3203ec3c/toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f", size = 22253 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b", size = 16588 },
 ]
 
 [[package]]

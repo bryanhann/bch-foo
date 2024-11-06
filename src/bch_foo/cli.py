@@ -9,7 +9,7 @@ console = Console()
 
 
 @app.command()
-def main(a,b):
+def main():
     """Console script for bch_foo."""
     console.print("XXXXXXXX cli")
 
