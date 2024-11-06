@@ -9,12 +9,13 @@ console = Console()
 
 
 @app.command()
-def main():
+def main(a,b):
+    console.print( int(a) + int(b) )
     """Console script for bch_foo."""
     console.print("Replace this message by putting your code into "
                "bch_foo.cli.main")
     console.print("See Typer documentation at https://typer.tiangolo.com/")
-    
+
 
 
 if __name__ == "__main__":
