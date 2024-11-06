@@ -3,7 +3,7 @@ requires-python = ">=3.12"
 
 [[package]]
 name = "bch-foo"
-version = "0.1.2b1"
+version = "0.1.2rc0"
 source = { editable = "." }
 dependencies = [
     { name = "bump" },
