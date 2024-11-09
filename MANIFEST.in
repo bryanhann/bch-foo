@@ -4,6 +4,10 @@ include HISTORY.rst
 include LICENSE
 include README.rst
 
+#include ./my.bump
+#include ./my.stuff
+#include ./src/bch_foo/ohno.sh
+
 recursive-include tests *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
